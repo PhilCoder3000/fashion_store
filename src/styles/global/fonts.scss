@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Orpheus Pro';
+  font-weight: 400;
+  font-display: swap;
+  src: url(/src/assets/fonts/woff2/OrpheusPro.woff2) format('woff2'),
+    url(/src/assets/fonts/woff/OrpheusPro.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-display: swap;
+  src: url(/src/assets/fonts/woff2/Inter-Regular.woff2) format('woff2'),
+    url(/src/assets/fonts/woff/Inter-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-display: swap;
+  src: url(/src/assets/fonts/woff2/Inter-Medium.woff2) format('woff2'),
+    url(/src/assets/fonts/woff/Inter-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-display: swap;
+  src: url(/src/assets/fonts/woff2/Inter-SemiBold.woff2) format('woff2'),
+    url(/src/assets/fonts/woff/Inter-SemiBold.woff) format('woff');
+}

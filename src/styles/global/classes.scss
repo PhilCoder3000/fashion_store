@@ -1,0 +1,123 @@
+@import './vars.scss';
+
+.head_1 {
+  font-family: $font_orpheus;
+  font-size: 72px;
+  font-weight: 400;
+  color: $text_main_100;
+}
+
+.head_2 {
+  font-family: $font_orpheus;
+  font-size: 56px;
+  font-weight: 400;
+  color: $text_main_100;
+}
+
+.head_3 {
+  font-family: $font_orpheus;
+  font-size: 32px;
+  font-weight: 400;
+  color: $text_main_100;
+}
+
+.subtitle_1 {
+  font-family: $font_orpheus;
+  font-size: 24px;
+  font-weight: 400;
+  color: $text_main_100;
+}
+
+.subtitle_2 {
+  font-family: $font_inter;
+  font-size: 16px;
+  font-weight: 600;
+  color: $text_main_100;
+}
+
+.subtitle_3 {
+  font-family: $font_inter;
+  font-size: 14px;
+  font-weight: 500;
+  color: $text_main_100;
+}
+
+.text {
+  font-family: $font_inter;
+  font-size: 16px;
+  font-weight: 400;
+  color: $text_main_65;
+  line-height: 160%;
+}
+
+.text_grey {
+  font-family: $font_inter;
+  font-size: 14px;
+  font-weight: 400;
+  color: $text_main_65;
+}
+
+.tag {
+  font-family: $font_inter;
+  font-size: 14px;
+  font-weight: 500;
+  color: $text_main_100;
+  text-transform: uppercase;
+  letter-spacing: 4.2px;
+}
+
+.white_blur_btn {
+  padding: 16px 24px;
+  display: flex;
+  background: $bg_white_15;
+  backdrop-filter: blur(10px);
+  color: $text_white_100;
+  font-family: $font_inter;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.white_btn {
+  padding: 16px 24px;
+  display: flex;
+  backdrop-filter: blur(10px);
+  color: $text_white_100;
+  font-family: $font_inter;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dark_bg_btn {
+  padding: 16px 24px;
+  display: flex;
+  background: $bg_dark_100;
+  color: $text_white_100;
+  font-family: $font_inter;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dark_btn {
+  padding: 16px 24px;
+  display: flex;
+  color: $text_main_100;
+  font-family: $font_inter;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn_white_icon {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/svg/icon_white_tr_arrow.svg);
+}
+
+.btn_black_icon {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/svg/icon_black_tr_arrow.svg);
+}
