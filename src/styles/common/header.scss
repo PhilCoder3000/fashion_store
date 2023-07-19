@@ -33,12 +33,49 @@ header {
     display: flex;
     align-items: center;
 
-    & > * {
+    .dropdown {
+      padding: 10px;
+      position: relative;
+      cursor: pointer;
+      user-select: none;
+
+      .options {
+        position: absolute;
+        top: 110%;
+        left: -20px;
+        width: 120px;
+        max-width: none;
+        max-height: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: $bg_white_100;
+        overflow: hidden;
+        
+        p {
+          margin: 0 20px 10px;
+          color: $text_main_65;
+
+          &:first-of-type {
+            margin-top: 20px;
+          }
+  
+          &:last-of-type {
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      &.opened .options {
+        max-height: none;
+      }
+    }
+
+    p, h3 {
       color: $text_white_100;
     }
 
     .logo {
-      margin: 0 40px;
+      margin: 0 30px;
     }
   }
 
