@@ -3,55 +3,43 @@
 header {
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
-  max-width: 1920px;
-  width: 100%;
-  height: 60px;
+  margin: 0 auto;
+  padding: 0 5.4%;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: $text_white_100;
 
   .burger_menu {
-    position: relative;
-    width: 24px;
-    height: 24px;
     display: flex;
+    align-items: center;
     font-family: $font_inter;
     font-size: 14px;
-    font-weight: 500;
-
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      left: 2px;
-      width: 20px;
-      height: 2px;
-      border-radius: 3px;
-      background-color: $bg_white_100;
-    }
-
-    &::before {
-      top: 0;
-    }
-
-    &::after {
-      bottom: 0;
-    }
+    font-weight: 400;
+    color: $text_white_100;
 
     span {
-      margin: auto 20px auto 2px;
-      width: 20px;
-      height: 2px;
-      border-radius: 3px;
-      background-color: $bg_white_100;
+      margin-right: 20px;
+      width: 24px;
+      height: 24px;
+      background-image: url(../../assets/svg/icon_white_burger.svg);
     }
   }
 
   .menu {
     display: flex;
     align-items: center;
+
+    & > * {
+      color: $text_white_100;
+    }
+
+    .logo {
+      margin: 0 40px;
+    }
   }
 
   .controls {
@@ -59,6 +47,7 @@ header {
     align-items: center;
 
     .search {
+      margin-right: 40px;
       width: 24px;
       height: 24px;
       background-image: url(../../assets/svg/icon_white_search.svg);

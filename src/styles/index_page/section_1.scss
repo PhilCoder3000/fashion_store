@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   img {
     position: absolute;
@@ -14,5 +15,34 @@
     left: 0;
     height: 100%;
     z-index: -1;
+    transition: all 1s;
+  }
+
+  .head_1 {
+    padding: 85px 0 30px;
+    color: $text_white_100;
+  }
+
+  button {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      background-color: $bg_white_100;
+      transition: all 1s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &:hover ~ img {
+      transform: scale(1.1);
+    }
   }
 }

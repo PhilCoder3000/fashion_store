@@ -8,6 +8,14 @@
 
 @font-face {
   font-family: 'Inter';
+  font-weight: 300;
+  font-display: swap;
+  src: url(/src/assets/fonts/woff2/Inter-Light.woff2) format('woff2'),
+    url(/src/assets/fonts/woff/Inter-Light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
   font-weight: 400;
   font-display: swap;
   src: url(/src/assets/fonts/woff2/Inter-Regular.woff2) format('woff2'),
