@@ -52,5 +52,10 @@
 @media (max-width: $sm)  {
   .section_1 {
     height: 720px;
+
+    .head_1 {
+      max-width: 200px;
+      text-align: center;
+    }
   }
 }
