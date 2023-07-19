@@ -70,10 +70,13 @@ module.exports = (env) => {
       )
       .concat(
         new MiniCssExtractPlugin({
-          filename: isBuild ? '[name].[contenthash].css': '[name].css',
-          chunkFilename: isBuild ? '[name].[contenthash].css': '[name].css',
+          filename: isBuild ? '[name].[contenthash].css' : '[name].css',
+          chunkFilename: isBuild ? '[name].[contenthash].css' : '[name].css',
         }),
       ),
+    performance: {
+      hints: false,
+    },
   };
 };
 
