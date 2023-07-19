@@ -8,10 +8,12 @@ export function addSwiper() {
 
   if (!container) return;
 
-  const spaceBetween = (container.clientWidth - 1040) / 2;
+  const spaceBetween = getSpaceBetween(container);
+
+  const slidesPerView = getSlidesPerView();
 
   new Swiper('.index_page_swiper', {
-    slidesPerView: 2.1,
+    slidesPerView,
     centeredSlides: true,
     spaceBetween,
     initialSlide: 2,
@@ -21,4 +23,18 @@ export function addSwiper() {
       nextEl: '.swiper-button-next',
     },
   });
+}
+
+function getSlidesPerView() {
+  if (window.innerWidth < 600) {
+    return 1.2;
+  }
+  return 2.1;
+}
+
+function getSpaceBetween(container: HTMLDivElement) {
+  if (window.innerWidth < 600) {
+    return 10
+  }
+  return (container.clientWidth - 1040) / 2;
 }

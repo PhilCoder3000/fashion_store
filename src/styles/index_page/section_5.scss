@@ -15,7 +15,43 @@
 
     img {
       height: 520px;
-      width: calc(100% / 4 - 15);
+      width: calc(100% / 4 - 15px);
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .section_5 {
+    .gallery {
+      img {
+        height: 350px;
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .section_5 {
+    .gallery {
+      img {
+        height: 240px;
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .section_5 {
+    padding-bottom: 0;
+    
+    .gallery {
+      flex-wrap: wrap;
+
+      img {
+        margin-bottom: 10px;
+        width: calc(50% - 5px);
+      }
     }
   }
 }

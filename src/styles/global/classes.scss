@@ -120,3 +120,31 @@
   height: 20px;
   background-image: url(../../assets/svg/icon_black_tr_arrow.svg);
 }
+
+@media (max-width: $lg) {
+
+}
+
+@media (max-width: $md) {
+  .head_1 {
+    font-size: 56px;
+  }
+
+  .head_2 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: $sm) {
+  .head_1 {
+    font-size: 46px;
+  }
+
+  .head_2 {
+    font-size: 32px;
+  }
+
+  .head_3 {
+    font-size: 24px;
+  }
+}

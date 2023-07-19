@@ -9,6 +9,7 @@ header {
   margin: 0 auto;
   padding: 0 5.4%;
   height: 70px;
+  max-width: 1920px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,6 +95,19 @@ header {
       width: 24px;
       height: 24px;
       background-image: url(../../assets/svg/icon_white_shop_cart.svg);
+    }
+  }
+}
+
+
+@media (max-width: $md) {
+  header {
+    padding: 0 20px;
+    
+    .menu {
+      .dropdown {
+        display: none;
+      }
     }
   }
 }
