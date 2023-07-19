@@ -1,0 +1,21 @@
+@import '../global/vars.scss';
+
+.section_5 {
+  padding: 80px 5% 100px;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      height: 520px;
+      width: calc(100% / 4 - 15);
+    }
+  }
+}
