@@ -1,0 +1,21 @@
+@import '../global/vars.scss';
+
+.section_1 {
+  position: relative;
+  margin-top: 70px;
+  width: 100%;
+  height: 420px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h1 {
+    position: absolute;
+    bottom: 40px;
+    right: 85px;
+    color: $text_white_100;
+  }
+}

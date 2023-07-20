@@ -14,6 +14,36 @@ header {
   align-items: center;
   justify-content: space-between;
 
+  &.white {
+    background-color: $bg_white_100;
+
+    .burger_menu_btn {
+      color: $text_main_100;
+
+      span {
+        background-image: url(../../assets/svg/icon_black_burger.svg);
+      }
+    }
+
+    .dropdown .subtitle_3 {
+      color: $text_main_100;
+    }
+    
+    .head_3 {
+      color: $text_main_100;
+    }
+
+    .controls {
+      .search {
+        background-image: url(../../assets/svg/icon_black_search.svg);
+      }
+
+      .shop_cart {
+        background-image: url(../../assets/svg/icon_black_shop_cart.svg);
+      }
+    }
+  }
+
   .burger_menu_btn {
     display: flex;
     align-items: center;
@@ -41,7 +71,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     background-color: $bg_white_100;
-    transition: all .5s;
+    transition: all 0.5s;
     z-index: 10;
     overscroll-behavior: contain;
 
@@ -60,7 +90,8 @@ header {
           margin-right: 10px;
           width: 24px;
           height: 24px;
-          background: url(../../assets/svg/icon_black_cross.svg) no-repeat center;
+          background: url(../../assets/svg/icon_black_cross.svg) no-repeat
+            center;
         }
       }
 
@@ -101,49 +132,12 @@ header {
     }
   }
 
-
   .menu {
     display: flex;
     align-items: center;
 
-    .dropdown {
-      padding: 10px;
-      position: relative;
-      cursor: pointer;
-      user-select: none;
-
-      .options {
-        position: absolute;
-        top: 110%;
-        left: -20px;
-        width: 120px;
-        max-width: none;
-        max-height: 0;
-        display: flex;
-        flex-direction: column;
-        background-color: $bg_white_100;
-        overflow: hidden;
-        
-        p {
-          margin: 0 20px 10px;
-          color: $text_main_65;
-
-          &:first-of-type {
-            margin-top: 20px;
-          }
-  
-          &:last-of-type {
-            margin-bottom: 20px;
-          }
-        }
-      }
-
-      &.opened .options {
-        max-height: none;
-      }
-    }
-
-    p, h3 {
+    p,
+    h3 {
       color: $text_white_100;
     }
 
@@ -171,7 +165,6 @@ header {
   }
 }
 
-
 @media (max-width: $md) {
   header {
     padding: 0 20px;
@@ -181,7 +174,7 @@ header {
         margin-right: 10px;
       }
     }
-    
+
     .menu {
       .dropdown {
         display: none;
