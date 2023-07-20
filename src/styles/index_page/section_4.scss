@@ -96,3 +96,16 @@
     }
   }
 }
+
+@media (max-width: $sm) {
+  .section_4 {
+    .header {
+      padding: 10px 25px 0;
+      justify-content: flex-start;
+    }
+
+    .swiper_container {
+      height: 420px;
+    }
+  }
+}
