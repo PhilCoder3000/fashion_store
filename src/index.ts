@@ -13,8 +13,10 @@ import { addDropdown } from './scripts/common/dropdown';
 import { hoveredGalleryCard } from './scripts/index_page/hovered_gallery_card';
 import { addSwiper } from './scripts/index_page/swiper';
 import { addFooterAccordion } from './scripts/common/footer_accordion';
+import { addHeaderBurgerMenu } from './scripts/common/header_burger_menu';
 
 window.onload = () => {
+  addHeaderBurgerMenu();
   addDropdown();
   hoveredGalleryCard();
   addSwiper();

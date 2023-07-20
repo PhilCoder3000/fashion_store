@@ -81,6 +81,7 @@ footer {
 
 @media (max-width: $md) {
   footer {
+    width: 100%;
     padding: 70px 0px 0;
     grid-template-columns: 1fr;
 
@@ -94,7 +95,7 @@ footer {
         border-bottom: 1px solid $border_main_15;
         max-height: 65px;
         overflow: hidden;
-        transition: all .5s;
+        transition: all 0.5s;
 
         h6 {
           position: relative;
@@ -109,8 +110,9 @@ footer {
             right: 0;
             width: 24px;
             height: 24px;
-            background: url(../../assets/svg/icon_black_select_arrow.svg) no-repeat center;
-            transition: all .5s;
+            background: url(../../assets/svg/icon_black_select_arrow.svg)
+              no-repeat center;
+            transition: all 0.5s;
           }
         }
 
@@ -125,9 +127,17 @@ footer {
     }
 
     .form_container {
+      width: 100%;
       grid-column: 1;
       grid-row: 2;
       padding: 0 20px 60px;
+      overflow: hidden;
+      
+      form {     
+        input {
+          max-width: calc(100% - 120px)
+        }
+      }
     }
 
     .copyright {

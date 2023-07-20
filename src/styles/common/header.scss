@@ -14,7 +14,7 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  .burger_menu {
+  .burger_menu_btn {
     display: flex;
     align-items: center;
     font-family: $font_inter;
@@ -29,6 +29,78 @@ header {
       background-image: url(../../assets/svg/icon_white_burger.svg);
     }
   }
+
+  .burger_menu_modal {
+    position: fixed;
+    top: 0;
+    left: -110%;
+    width: 100dvw;
+    max-width: 1920px;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $bg_white_100;
+    transition: all .5s;
+    z-index: 10;
+    overscroll-behavior: contain;
+
+    .header {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .burger_menu_close {
+        padding: 18px 5px 18px 20px;
+        display: flex;
+        align-items: center;
+
+        span {
+          margin-right: 10px;
+          width: 24px;
+          height: 24px;
+          background: url(../../assets/svg/icon_black_cross.svg) no-repeat center;
+        }
+      }
+
+      .search {
+        margin-right: 15px;
+        background-image: url(../../assets/svg/icon_black_search.svg);
+      }
+
+      .shop_cart {
+        margin-right: 20px;
+        background-image: url(../../assets/svg/icon_black_shop_cart.svg);
+      }
+    }
+
+    .category {
+      padding: 0px 15px 0;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+
+      h5 {
+        margin-bottom: 20px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+          width: 50%;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    &.opened {
+      left: 0;
+    }
+  }
+
 
   .menu {
     display: flex;
@@ -103,10 +175,22 @@ header {
 @media (max-width: $md) {
   header {
     padding: 0 20px;
+
+    .burger_menu_btn {
+      span {
+        margin-right: 10px;
+      }
+    }
     
     .menu {
       .dropdown {
         display: none;
+      }
+    }
+
+    .controls {
+      .search {
+        margin-right: 20px;
       }
     }
   }
