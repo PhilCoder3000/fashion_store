@@ -4,15 +4,38 @@ export function addFilter() {
     '.catalog_filter_close_btn',
   );
   const modal = document.querySelector<HTMLDivElement>('.catalog_filter_modal');
+  const content = modal?.querySelector<HTMLDivElement>('.content');
 
-  if (openBtn && closeBtn && modal) {
-    openBtn.onclick = () => {
+  function open() {
+    if (modal && content) {
       modal.classList.add('opened');
-      document.body.style.overflowY = 'hidden';
-    };
-    closeBtn.onclick = () => {
-      modal.classList.remove('opened');
-      document.body.style.overflowY = 'initial';
-    };
+      content.style.transform = 'translateX(0)';
+    }
   }
+
+  function close() {
+    if (content) content.style.transform = 'translateX(100%)';
+
+    setTimeout(() => {
+      modal?.classList.remove('opened');
+    }, 300);
+  }
+
+  if (openBtn && closeBtn && modal && content) {
+    openBtn.addEventListener('click', open);
+    closeBtn.addEventListener('click', close);
+    content.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+    modal.addEventListener('click', close);
+  }
+
+  content?.querySelectorAll<HTMLDivElement>('.accordion').forEach((acc) => {
+    const head = acc.querySelector<HTMLHeadElement>('.subtitle_2');
+    if (head) {
+      head.onclick = () => {
+        acc.classList.toggle('opened');
+      };
+    }
+  });
 }
