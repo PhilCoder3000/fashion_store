@@ -1,0 +1,25 @@
+@import '../global/vars.scss';
+
+.section_5 {
+  height: 920px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+@media (max-width: $md) {
+  .section_5 {
+    height: 820px;
+  }
+}
+
+
+@media (max-width: $sm) {
+  .section_5 {
+    height: 720px;
+  }
+}

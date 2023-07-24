@@ -1,0 +1,45 @@
+@import '../global/vars.scss';
+
+.section_2 {
+  display: flex;
+  align-items: flex-start;
+  margin: 100px 0 135px;
+
+  h2 {
+    width: 50%;
+    margin-right: 10%;
+    max-width: 350px;
+  }
+
+  .description {
+    width: 50%;
+
+    p {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .section_2 {
+    margin: 0;
+    padding: 50px 5% 70px;
+  }
+}
+
+@media (max-width: $sm) {
+  .section_2 {
+    flex-direction: column;
+    padding: 40px 20px 70px;
+
+    h2 {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+
+    .description {
+      width: 100%;
+      padding-left: 55px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import '../global/vars.scss';
+
+.section_1 {
+  margin-top: 70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h1 {
+    position: absolute;
+    bottom: 40px;
+    right: 5%;
+    color: $text_white_100;
+  }
+}
+
+@media (max-width: $lg) {
+  .section_1 {
+    height: 320px;
+  }
+}
+
+@media (max-width: $md) {
+  .section_1 {
+    height: 250px;
+  }
+}
+
+@media (max-width: $sm) {
+  .section_1 {
+    height: 140px;
+
+    h1 {
+      bottom: 20px;
+      right: 20px;
+      font-size: 32px;
+    }
+  }
+}
