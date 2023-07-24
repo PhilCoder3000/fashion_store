@@ -1,0 +1,29 @@
+@import '../global/vars.scss';
+
+.section_2 {
+  padding: 100px 5% 60px;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .body {
+    display: flex;
+  }
+}
+
+@media (max-width: $md) {
+  .section_2 {
+    .body {
+      overflow-y: auto;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .section_2 {
+    padding: 40px 20px;
+  }
+}

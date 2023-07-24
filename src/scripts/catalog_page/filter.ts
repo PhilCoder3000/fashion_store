@@ -29,13 +29,4 @@ export function addFilter() {
     });
     modal.addEventListener('click', close);
   }
-
-  content?.querySelectorAll<HTMLDivElement>('.accordion').forEach((acc) => {
-    const head = acc.querySelector<HTMLHeadElement>('.subtitle_2');
-    if (head) {
-      head.onclick = () => {
-        acc.classList.toggle('opened');
-      };
-    }
-  });
 }
