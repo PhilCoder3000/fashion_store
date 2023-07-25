@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
 
-const pages = ['index', 'catalog', 'item', 'about', 'cart', 'order'];
+const pages = ['index', 'catalog', 'item', 'about', 'cart', 'checkout'];
 
 module.exports = (env) => {
   const isBuild = env.WEBPACK_BUILD;
