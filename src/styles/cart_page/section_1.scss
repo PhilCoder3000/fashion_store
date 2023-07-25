@@ -15,7 +15,6 @@
 
   .body {
     display: flex;
-    align-items: flex-start;
 
     .cart_items {
       display: flex;
@@ -113,6 +112,7 @@
     .summary {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       width: 38%;
       min-width: 200px;
 
@@ -146,6 +146,21 @@
           height: 42px;
           background-color: $bg_white_100;
           color: $text_main_100;
+        }
+      }
+
+      .links {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .subtitle_3 {
+          margin-bottom: 20px;
+        }
+
+        .text_grey {
+          margin-bottom: 10px;
         }
       }
     }
@@ -189,8 +204,16 @@
       }
 
       .summary {
-        margin-top: 40px;
         width: 100%;
+
+        .links {
+          margin-top: 20px;
+          
+          .subtitle_3 {
+            margin-bottom: -15px;
+            align-self: flex-start;
+          }
+        }
       }
     }
   }
