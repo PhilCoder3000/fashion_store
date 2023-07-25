@@ -8,11 +8,11 @@ import './styles/common/dropdown.scss';
 import './styles/checkout_page/section_1.scss';
 
 import { addDropdown } from './scripts/common/dropdown';
-import { addFooterAccordion } from './scripts/common/footer_accordion';
 import { addHeaderBurgerMenu } from './scripts/common/header_burger_menu';
+import { addAccordion } from './scripts/common/accordion';
 
 window.onload = () => {
   addHeaderBurgerMenu();
   addDropdown();
-  addFooterAccordion();
+  addAccordion();
 };

@@ -1,0 +1,72 @@
+@import '../global/vars.scss';
+
+.section_1 {
+  margin-top: 70px;
+  padding: 40px 13%;
+  display: flex;
+  flex-direction: column;
+
+  & > h2 {
+    margin-bottom: 70px;
+  }
+
+  .body {
+    display: flex;
+
+    .questions {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+
+      & > h4 {
+        margin-bottom: 40px;
+      }
+
+      & > h5 {
+        margin: 40px 0 10px;
+      }
+
+      .accordion {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border-bottom: 1px solid $border_main_15;
+
+        h6 {
+          position: relative;
+          min-height: 50px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            right: 0;
+            width: 24px;
+            height: 24px;
+            background: url(../../assets/svg/icon_black_plus.svg) no-repeat center;
+            transition: all .3s;
+          }
+        }
+
+        p {
+          height: 0;
+          transition: all .3s;
+        }
+
+        &.opened {
+          h6::after {
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

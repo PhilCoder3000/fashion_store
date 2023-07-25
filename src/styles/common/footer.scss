@@ -22,8 +22,15 @@ footer {
         margin-bottom: 20px;
       }
 
-      a {
-        margin-bottom: 9px;
+      .hidden_content {
+        transition: all .3s;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        
+        a {
+          margin-bottom: 9px;
+        }
       }
     }
   }
@@ -93,8 +100,6 @@ footer {
 
       .column {
         border-bottom: 1px solid $border_main_15;
-        max-height: 65px;
-        overflow: hidden;
         transition: all 0.5s ease-in;
 
         h6 {
@@ -116,8 +121,11 @@ footer {
           }
         }
 
+        .hidden_content {
+          height: 0;
+        }
+
         &.opened {
-          max-height: 300px;
 
           h6::after {
             transform: rotate(180deg);

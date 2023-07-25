@@ -9,7 +9,6 @@ import './styles/item_page/section_1.scss';
 import './styles/item_page/section_2.scss';
 
 import { addDropdown } from './scripts/common/dropdown';
-import { addFooterAccordion } from './scripts/common/footer_accordion';
 import { addHeaderBurgerMenu } from './scripts/common/header_burger_menu';
 import { hoveredGalleryCard } from './scripts/index_page/hovered_gallery_card';
 import { addItemSwiper } from './scripts/item_page/item_swiper';
@@ -25,5 +24,4 @@ window.onload = () => {
   addSizeGuide();
   addToCard();
   hoveredGalleryCard();
-  addFooterAccordion();
 };

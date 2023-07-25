@@ -108,14 +108,16 @@
           margin: 0 30px 20px;
           display: flex;
           flex-direction: column;
-          overflow: hidden;
-          max-height: 35px;
           transition: max-height .3s ease-in-out;
           cursor: pointer;
 
-          &.opened {
-            max-height: 300px;
+          .hidden_content {
+            height: 0;
+            overflow: hidden;
+            transition: all .3s;
+          }
 
+          &.opened {
             h6::after {
               transform: rotate(180deg);
             }
