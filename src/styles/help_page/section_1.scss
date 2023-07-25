@@ -12,6 +12,7 @@
 
   .body {
     display: flex;
+    justify-content: space-between;
 
     .questions {
       width: 60%;
@@ -46,14 +47,15 @@
             right: 0;
             width: 24px;
             height: 24px;
-            background: url(../../assets/svg/icon_black_plus.svg) no-repeat center;
-            transition: all .3s;
+            background: url(../../assets/svg/icon_black_plus.svg) no-repeat
+              center;
+            transition: all 0.3s;
           }
         }
 
         p {
           height: 0;
-          transition: all .3s;
+          transition: all 0.3s;
         }
 
         &.opened {
@@ -64,9 +66,77 @@
       }
     }
 
-    .form {
+    form {
+      width: 30%;
       display: flex;
       flex-direction: column;
+
+      & > h4 {
+        margin-bottom: 30px;
+      }
+
+      & > h5 {
+        margin-bottom: 80px;
+      }
+
+      & > input {
+        margin-bottom: 10px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $border_main_15;
+        color: $text_main_100;
+
+        &::placeholder {
+          color: $text_main_65;
+        }
+      }
+
+      label {
+        margin: 40px 0;
+        color: $text_main_65;
+      }
+
+      button {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .section_1 {
+    padding: 40px 5%;
+  }
+}
+
+@media (max-width: $sm) {
+  .section_1 {
+    padding: 20px;
+
+    & > h2 {
+      margin-bottom: 20px;
+    }
+
+    .body {
+      flex-direction: column;
+
+      .questions {
+        width: 100%;
+
+        & > h4 {
+          margin-bottom: 20px;
+        }
+
+        & > h5 {
+          margin: 20px 0;
+        }
+      }
+
+      form {
+        margin-top: 40px;
+        width: 100%;
+      }
     }
   }
 }
