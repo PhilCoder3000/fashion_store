@@ -13,3 +13,27 @@
     color: $text_white_100;
   }
 }
+
+@media (max-width: $lg) {
+  .section_1 {
+    height: 320px;
+  }
+}
+
+
+@media (max-width: $md) {
+  .section_1 {
+    height: 220px;
+  }
+}
+
+@media (max-width: $sm) {
+  .section_1 {
+    height: 140px;
+
+    h1 {
+      right: 20px;
+      bottom: 20px;
+    }
+  }
+}
